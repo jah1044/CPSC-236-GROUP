@@ -1,0 +1,39 @@
+What is the largest planet in our solar system?|A) Earth |B) Mars |C) Jupiter |D) Saturn|C
+
+Who painted the Mona Lisa?|A) Vincent van Gogh |B) Leonardo da Vinci |C) Pablo Picasso |D) Michelangelo|B
+
+What is the chemical symbol for gold?|A) Ag|B) Fe|C) Cu|D) Au|D
+
+What is the square root of 64?|A) 6|B) 10|C) 8|D) 12|C
+
+Which element has the atomic number 1?|A) Hydrogen|B) Oxygen|C) Helium|D) Nitrogen|A
+
+Who wrote "Romeo and Juliet"?|A) Charles Dickens|B) William Shakespeare|C) Mark Twain|D) Jane Austen|B
+
+How many continents are there on Earth?|A) 5| B) 6 |C) 7| D) 8|C
+
+What is the boiling point of water in Fahrenheit?|A) 190°F|B) 200°F|C) 212°F|D) 220°F|C
+
+Which planet is known as the Red Planet?|A) Mars|B) Venus|C) Mercury|D) Uranus|A
+
+What is the longest river in the world?|A) Amazon|B) Mississippi|C) Yangtze|D) Nile|D
+
+Who discovered gravity?|A) Isaac Newton|B) Albert Einstein|C) Galileo Galilei|D) Nikola Tesla|A
+
+What is the capital of Japan?|A) Seoul|B) Beijing|C) Tokyo|D) Bangkok|C
+
+How many legs does a spider have?|A) 4|B) 6|C) 10|D) 8|D
+
+What gas do plants absorb from the atmosphere?|A) Oxygen|B) Carbon dioxide|C) Nitrogen|D) Hydrogen|B
+
+Who was the first President of the United States?|A) George Washington|B) Abraham Lincoln|C) Thomas Jefferson|D) John Adams|A
+
+What is the smallest prime number?|A) 0|B) 1|C) 2|D) 3|C
+
+Which ocean is the largest?|A) Atlantic Ocean|B) Pacific Ocean|C) Indian Ocean|D) Arctic Ocean|B
+
+What is the capital of Canada?|A) Ottawa|B) Toronto|C) Vancouver|D) Montreal|A
+
+Which animal is known as the "King of the Jungle"?|A) Elephant|B) Tiger|C) Lion|D) Bear|C
+
+What is the hardest natural substance on Earth?|A) Gold|B) Iron|C) Quartz|D) Diamond|D
