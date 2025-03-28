@@ -9,7 +9,7 @@ https://www.python.org/downloads/release/python-3132/
 Install Required Packages – Open a terminal and run:
 pip install pygame
 
-Download Beep Sound Files from  https://inventwithpython.com/pygame/chapter5.html 
+Download Beep Sound Files from  -https://inventwithpython.com/pygame/chapter5.html 
 Place beep1.ogg, beep2.ogg, beep3.ogg, and beep4.ogg inside a sounds folder in the same directory as simon.py.
 
 Run the Game – In the terminal, navigate to the game folder and run:
