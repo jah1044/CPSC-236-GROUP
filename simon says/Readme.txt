@@ -2,7 +2,9 @@ Simon Game
 
 How to Run
 
-Install Python (if not already installed) – Download from python.org.
+Install Python (if not already installed) – Download from
+https://www.python.org/downloads/release/python-3132/
+
 
 Install Required Packages – Open a terminal and run:
 pip install pygame
