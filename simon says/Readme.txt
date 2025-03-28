@@ -14,6 +14,7 @@ Place beep1.ogg, beep2.ogg, beep3.ogg, and beep4.ogg inside a sounds folder in t
 
 Run the Game – In the terminal, navigate to the game folder and run:
 python simon.py
+
 How to Play
 
 Watch the pattern of button flashes.
