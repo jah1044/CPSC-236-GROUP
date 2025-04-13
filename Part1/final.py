@@ -2,7 +2,7 @@ import random, time, re, os
 
 # Function to validate student ID format (A followed by 5 digits 1-9, no leading zero)
 def validate_id(student_id):
-    """Validate the student ID format.
+    """Validate the student ID format. 
     
     Args:
         student_id (str): The student ID to validate.
@@ -10,7 +10,7 @@ def validate_id(student_id):
     Returns:
         bool: True if the ID is valid, False otherwise.
     """
-    return bool(re.match(r'^A[1-9][0-9]{4}$', student_id))
+    return bool(re.match(r'^A[1-9][0-9]{4}$', student_id)) #regex
 
 # Function to load and shuffle questions from a test bank file
 def load_questions(filename, num_questions=10):
