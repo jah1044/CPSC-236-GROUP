@@ -10,8 +10,10 @@ Contributors:
 Quiz Maker
 - Joey Hudak (main coder)
 - Jameson McIntyre (debugging, function documentation)
+
 Simon Says
 - Joey Hudak (main)
+
 Connect 4
 - Austin Cousins (main, documentation)
 
