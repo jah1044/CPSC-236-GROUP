@@ -15,10 +15,11 @@ Simon Says
 - Joey Hudak (main)
 
 Connect 4
-- Austin Cousins (main, documentation)
+- Austin Cousins (main)
 
-Editor (GitHub doc and Code)
+Editor (GitHub documentation and code revision)
 - Jameson McIntyre
+
 ## Running the Project
 
 This project is for the final project asssignment for the class CPSC 236. 
@@ -33,6 +34,25 @@ No external libraries or installations are required. Just run the python file Qu
 
 ## Part 2
 ### Connect 4
+
+How To Run
+
+Make sure Pygame is installed - Open a terminal and run:
+
+pip install pygame (or pip3 install pygame)
+
+Run the fourinarow.py file. The one marked Original is the original code.
+
+How to Play
+
+Play versus Player or CPU
+
+PvP - Drag and drop the token of the color (either black or red's turn) above the column you want to drop the token in. 
+      Connect 4 rules apply - diagonal 4, row 4, column 4 of your color connnected to win.
+
+CPU - Drag and drop your color (red) above the column you want to drop the token in.
+      The CPU will choose after your turn is over.
+      Connect 4 rules apply - diagonal 4, row 4, column 4 of your color connnected to win.
 
 ### Simon Game
 
