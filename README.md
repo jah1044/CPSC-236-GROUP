@@ -17,8 +17,8 @@ Simon Says
 Connect 4
 - Austin Cousins (main)
 
-Editor (GitHub documentation and code revision)
-- Jameson McIntyre
+Editor 
+- Jameson McIntyre (GitHub documentation and code revision)
 
 ## Running the Project
 
