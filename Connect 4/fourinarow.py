@@ -8,6 +8,7 @@ BOARDWIDTH = 7
 BOARDHEIGHT = 6
 assert BOARDWIDTH >= 4 and BOARDHEIGHT >= 4, 'Board must be at least 4x4.'
 
+# computer difficulty when pvc is selected 
 DIFFICULTY = 2
 
 SPACESIZE = 50
@@ -24,6 +25,7 @@ WHITE = (255, 255, 255)
 BGCOLOR = BRIGHTBLUE
 TEXTCOLOR = WHITE
 
+# variables to indentify tokens and players
 RED = 'red'
 BLACK = 'black'
 EMPTY = None
@@ -39,6 +41,8 @@ POP_RIGHT_RECT = pygame.Rect(WINDOWWIDTH - 80, 20, 60, 30)
 def displayMenu():
     """Displays a menu for the user to choose whether to play a computer or a player"""
     font = pygame.font.SysFont(None, 48)
+    
+    # Creates menu background and options
     while True:
         DISPLAYSURF.fill(BGCOLOR)
         title = font.render("Choose Game Mode", True, WHITE)
@@ -48,7 +52,8 @@ def displayMenu():
         DISPLAYSURF.blit(pvp, (100, 200))
         DISPLAYSURF.blit(pvc, (100, 300))
         pygame.display.update()
-
+        
+        # Checks for any key selections to start the game 
         for event in pygame.event.get():
             if event.type == KEYDOWN:
                 if event.key == K_1:
@@ -64,6 +69,8 @@ def runGame(isFirstGame):
     """Runs a single game loop, alternating turns between players, handling moves and checking for win/tie."""
     global turn
     global gameMode, popMode
+
+    # controls what player goes first to start the game 
     if isFirstGame:
         turn = RED
         showHelp = True
@@ -71,7 +78,7 @@ def runGame(isFirstGame):
         turn = RED if random.randint(0, 1) == 0 else BLACK
         showHelp = False
 
-    board = getNewBoard()
+    board = getNewBoard() # new empty board
     winnerImg = None
 
     while True:
@@ -113,9 +120,10 @@ def runGame(isFirstGame):
                     continue
 
         if isBoardFull(board):
-            winnerImg = TIEWINNERIMG
+            winnerImg = TIEWINNERIMG 
             break
 
+    # shows the winner message until the user clicks continue 
     while True:
         drawBoard(board)
         DISPLAYSURF.blit(winnerImg, WINNERRECT)
@@ -140,6 +148,7 @@ def main():
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
     pygame.display.set_caption('Four in a Row')
 
+    # downloads the game piece images 
     REDTOKENIMG = pygame.image.load('4row_red.png')
     REDTOKENIMG = pygame.transform.smoothscale(REDTOKENIMG, (SPACESIZE, SPACESIZE))
     BLACKTOKENIMG = pygame.image.load('4row_black.png')
@@ -147,12 +156,14 @@ def main():
     BOARDIMG = pygame.image.load('4row_board.png')
     BOARDIMG = pygame.transform.smoothscale(BOARDIMG, (SPACESIZE, SPACESIZE))
 
+    # loads winner screen images
     HUMANWINNERIMG = pygame.image.load('4row_humanwinner.png')
     COMPUTERWINNERIMG = pygame.image.load('4row_computerwinner.png')
     TIEWINNERIMG = pygame.image.load('4row_tie.png')
     WINNERRECT = HUMANWINNERIMG.get_rect()
     WINNERRECT.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2))
 
+    # sets the token drop positions 
     REDPILERECT = pygame.Rect(int(SPACESIZE / 2), WINDOWHEIGHT - int(3 * SPACESIZE / 2), SPACESIZE, SPACESIZE)
     BLACKPILERECT = pygame.Rect(WINDOWWIDTH - int(3 * SPACESIZE / 2), WINDOWHEIGHT - int(3 * SPACESIZE / 2), SPACESIZE, SPACESIZE)
 
@@ -164,6 +175,7 @@ def main():
     gameMode = displayMenu()
     isFirstGame = True
 
+    # runs the game loop
     while True:
         runGame(isFirstGame)
         isFirstGame = False
