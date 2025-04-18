@@ -3,6 +3,7 @@
 import random, copy, sys, pygame
 from pygame.locals import *
 
+# Create the game board size and color 
 BOARDWIDTH = 7
 BOARDHEIGHT = 6
 assert BOARDWIDTH >= 4 and BOARDHEIGHT >= 4, 'Board must be at least 4x4.'
